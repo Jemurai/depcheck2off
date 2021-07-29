@@ -1,10 +1,16 @@
 # Dependency Check to OFF Converter
 
-Convert a dependency check file to OFF format.
+Convert a dependency check file to OFF format. (see [github.com/owasp/off](https://github.com/owasp/off))
+
+## Running
+
+1. Get a dependency check report in json
+1. `go get github.com/jemurai/depcheck2off`
+1. `depcheck2off depcheck-report.json`
 
 ## Releasing
 
-Crush works to follow golang best practices.  Therefore, when updating, we need to do the following:
+Depcheck2off works to follow golang best practices.  Therefore, when updating, we need to do the following:
 
 - `go get -u` 
 - `go mod tidy`
